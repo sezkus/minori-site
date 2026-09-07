@@ -29,9 +29,10 @@ header.site a { display: flex; align-items: center; gap: 12px; text-decoration: 
   place-items: center;
   width: 40px; height: 40px;
   border-radius: 12px 12px 12px 4px;
+  overflow: hidden;
   background: var(--ink);
-  color: var(--surface);
 }
+.mark img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .wordmark { font-weight: 800; font-size: 20px; letter-spacing: -0.01em; }
 .tag { margin-left: auto; color: var(--ink-soft); font-size: 14px; }
 h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
