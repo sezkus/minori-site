@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="./icon.png">
+<title>Minori · Press kit</title>
+<meta name="description" content="Minori press kit — facts, assets and contact for editorial and press use. A digital junk journal for a baby's first years.">
+<link rel="stylesheet" href="./style.css">
+<style>
+  table.facts { width: 100%; border-collapse: collapse; margin: 8px 0 24px; }
+  table.facts th, table.facts td { text-align: left; padding: 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.facts th { width: 38%; font-weight: 600; color: var(--ink-soft); font-size: 15px; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; margin: 8px 0 8px; padding: 0; list-style: none; }
+  .shots img { width: 100%; border-radius: 10px; border: 1px solid var(--line); display: block; background: var(--surface); }
+  .langs { font-size: 15px; color: var(--ink-soft); line-height: 1.9; }
+  .note { font-size: 14px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a href="./index.html">
+    <span class="mark" aria-hidden="true"><img src="./icon.png" alt=""></span>
+    <span class="wordmark">minori</span>
+  </a>
+  <span class="tag">press kit</span>
+</header>
+
+<h1>Minori — press kit</h1>
+<p class="date">Everything here is free to use for editorial coverage. No sign-in, no request form.</p>
+
+<div class="lead">
+  <p style="margin:0">Minori is a digital <strong>junk journal</strong> for a baby's first years — a keepsake
+  book you make by hand, not a template photo album. Tap the cover and it opens; every page is a blank
+  sheet you fill with photos cut into shapes, handwritten notes, washi tape, stickers and finger drawing.</p>
+</div>
+
+<h2>What makes it different</h2>
+<ul>
+  <li><strong>The book is native.</strong> No web view anywhere — the cover lifts, the spine turns and the
+  leaves fall in a hand-written engine, and photo filters run on the GPU through Skia and Metal.</li>
+  <li><strong>The cut-out is on device.</strong> One tap lifts the subject out of its background with
+  Vision, on the phone; nothing is uploaded to do it.</li>
+  <li><strong>Nothing leaves the phone.</strong> No account, no content server, no ads, no cross-app
+  tracking. Books back up as a single file to Files or iCloud Drive and export as a print-ready PDF.</li>
+  <li><strong>689 stickers in 30 sets</strong>, eleven of them drawn for Minori, plus patterns, tapes,
+  frames and photo shapes generated in code.</li>
+</ul>
+
+<h2>New in 1.2</h2>
+<ul>
+  <li><strong>Home Screen and Lock Screen widget</strong> — the baby's name and age, the pages and photos
+  the book holds, with the cover's own colour. The age is formatted by the system, so it reads correctly
+  in every one of the 24 languages.</li>
+  <li><strong>Siri Shortcuts</strong> — "Add a memory" and "Open my book", localized into all 24 languages
+  rather than English only.</li>
+  <li><strong>Camera</strong> — take the photo without leaving the page.</li>
+  <li><strong>Sixteen new languages</strong>, taking Minori from 8 to 24.</li>
+</ul>
+
+<h2>Facts</h2>
+<table class="facts">
+  <tr><th>Developer</th><td>Scanner Studio</td></tr>
+  <tr><th>Platforms</th><td>iPhone and iPad (iOS 16.4+), Android</td></tr>
+  <tr><th>Category</th><td>Photo &amp; Video · Lifestyle</td></tr>
+  <tr><th>Price</th><td>Free. Optional <em>Minori Plus</em> subscription, weekly or yearly.</td></tr>
+  <tr><th>Age rating</th><td>4+</td></tr>
+  <tr><th>Languages</th><td>24</td></tr>
+  <tr><th>Privacy</th><td>No account. No content server. No ads. No tracking. Books stay on the device.</td></tr>
+  <tr><th>App Store</th><td><a href="https://apps.apple.com/app/id6809182573">apps.apple.com/app/id6809182573</a></td></tr>
+  <tr><th>Press contact</th><td><a href="mailto:hello.scannerstudio@gmail.com">hello.scannerstudio@gmail.com</a></td></tr>
+</table>
+
+<h2>Languages</h2>
+<p class="langs">Türkçe · English · Deutsch · Español · Français · Italiano · Nederlands · Português ·
+Polski · Русский · Українська · Čeština · Hrvatski · Svenska · Dansk · Norsk · Suomi · Română ·
+Magyar · Azərbaycanca · 日本語 · 한국어 · 繁體中文 · العربية</p>
+
+<h2>Screenshots</h2>
+<p class="note">Full-resolution PNG, 1320 × 2868 — the same set that ships on the App Store product page, plus the Home Screen widget. Click any image for the original.</p>
+<ul class="shots" id="shots"></ul>
+
+<h2>App icon</h2>
+<p><a href="./press/icon-1024.png"><img src="./icon.png" alt="Minori app icon" width="120" height="120" style="border-radius:22px;border:1px solid var(--line)"></a></p>
+<p class="note">1024 × 1024 PNG, no alpha channel.</p>
+
+<h2>Usage</h2>
+<p>These assets may be reproduced in coverage of Minori. The app icon and screenshots may not be altered
+beyond cropping and scaling. Sticker artwork inside the app comes from
+<a href="https://github.com/jdecked/twemoji">Twemoji</a> (CC-BY 4.0) and
+<a href="https://github.com/phosphor-icons/core">Phosphor Icons</a> (MIT) alongside artwork drawn for Minori.</p>
+
+<script>
+/* Ekran görüntüleri press/ klasöründen okunuyor; dosya adları sabit olduğu
+   için liste burada üretiliyor, elle <li> yazılmıyor. */
+const shots = ['01', '02', '03', '04', '05', '06'];
+document.getElementById('shots').innerHTML = shots.map(n =>
+  `<li><a href="./press/shot-${n}.png"><img src="./press/shot-${n}.png" alt="Minori screenshot ${n}" loading="lazy"></a></li>`
+).join('');
+</script>
+
+<footer>
+  <p><a href="./index.html">Minori</a> · <a href="./gizlilik.html">Gizlilik</a> ·
+  <a href="./privacy-en.html">Privacy</a> · <a href="./destek.html">Destek</a></p>
+</footer>
+</div>
+</body>
+</html>
