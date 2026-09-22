@@ -47,6 +47,23 @@ p, li { color: #3b4a45; }
   padding: 16px 18px;
   margin: 0 0 24px;
 }
+.get { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 6px; }
+.get a {
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  color: var(--surface);
+  text-decoration: none;
+}
+.get a:hover { background: #1f302b; }
+.get .where { font-size: 13px; letter-spacing: 0.01em; opacity: 0.7; }
+.get .what { font-weight: 700; font-size: 17px; }
+p.note { color: var(--ink-soft); font-size: 14px; margin: 0 0 26px; }
 .warn {
   background: #fbf1e6;
   border: 1px solid rgba(185, 116, 63, 0.35);
